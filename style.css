@@ -1,0 +1,323 @@
+/* ---------------------------- სტილები, რომლებიც საერთოა მთელი საიტისთვის ---------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+.uppercase {
+  text-transform: uppercase;
+}
+body {
+  height: 100vh;
+  width: 100%;
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+/* ---------------------------- fonts ---------------------------- */
+h4 {
+  font-size: 17px;
+}
+.category {
+  font-size: 12px;
+}
+/* ---------------------------- Header ---------------------------- */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px;
+  border-bottom: 1px solid #eceded;
+  position: sticky;
+  background-color: #ffffff;
+  top: 0;
+}
+.header-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px;
+  position: sticky;
+  background-color: #ffffff;
+  top: 0;
+}
+/* ----------------------- Header - Left side  -----------------------*/
+.left-div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 15%;
+}
+input::placeholder {
+  color: #89928e;
+  font-size: 15px;
+  text-align: left;
+}
+.search-input {
+  height: 58px;
+  width: 100%;
+  min-width: 280px;
+  width: auto;
+  background-color: #ecf3f5;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  box-shadow: 4px 4px 10px #89928e;
+  cursor: pointer;
+  padding: 20px;
+  font-family: inherit;
+}
+/* ----------------------- Header - Left side  -----------------------*/
+.right-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+.calendar {
+  font-family: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+.calendar img {
+  cursor: pointer;
+}
+label {
+  cursor: pointer;
+  position: relative;
+  max-width: 260px;
+  width: 100%;
+}
+/* Melik Helped me in this part and with help of him I was able to manage this part perfectly */
+input[type="date"]::-webkit-calendar-picker-indicator {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+}
+input[type="date"]::-webkit-datetime-edit-text {
+  -webkit-appearance: none;
+  display: none;
+}
+input[type="date"]::-webkit-datetime-edit-month-field {
+  -webkit-appearance: none;
+  display: none;
+}
+input[type="date"]::-webkit-datetime-edit-day-field {
+  -webkit-appearance: none;
+  display: none;
+}
+input[type="date"]::-webkit-datetime-edit-year-field {
+  -webkit-appearance: none;
+  display: none;
+}
+.date-input {
+  max-width: 20px;
+  width: 100%;
+  height: 20px;
+  padding-left: 25px;
+  margin-right: 10px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+button {
+  height: 58px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  padding: 30px;
+  border: none;
+  border-radius: 10px;
+  background-color: #b1ced4;
+  box-shadow: 4px 4px 5px #d8e9ec;
+  cursor: pointer;
+
+  /* fonts */
+  color: black;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 500;
+}
+.toggle-btn img {
+  display: none;
+  height: 40px;
+}
+/* HEADER RESPONSIVE */
+@media (max-width: 940px) {
+  .calendar span {
+    display: none;
+  }
+}
+@media (max-width: 735px) {
+  .right-div button,
+  .right-div .calendar {
+    display: none;
+  }
+  .right-div .toggle-btn,
+  .right-div .toggle-btn img {
+    display: block;
+    width: 100%;
+  }
+}
+@media (max-width: 572px) {
+  .header-wrapper {
+    gap: 6px;
+  }
+  .header-wrapper .left-div {
+    justify-content: flex-start;
+    gap: 4px;
+  }
+}
+@media (max-width: 515px) {
+  .header-wrapper .left-div input {
+    display: none;
+  }
+}
+/* ----------------------- Main Product Grid section ----------------------- */
+section {
+  /* padding: 100px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.grid-wrapper {
+  width: 60%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-rows: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  grid-gap: 16px;
+}
+.grid-item {
+  max-width: 190px;
+  width: 203px;
+  height: 220px;
+  background-color: #d8e6e9;
+  border: 1px solid #eceded;
+  border-radius: 15px;
+}
+/* Grid wrapper second child  styles */
+.product2 .description .product-features .padding-span::before {
+  content: url("./images/G.svg");
+}
+.product3 .description .product-features .padding-span::before {
+  content: url("./images/nuts-dark.svg");
+}
+.product4 .description .product-features .padding-span::before {
+  content: url("./images/free.svg");
+}
+.product5 .description .product-features .padding-span::before,
+.product6 .description .product-features .padding-span::before,
+.product7 .description .product-features .padding-span::before,
+.product8 .description .product-features .padding-span::before,
+.product9 .description .product-features .padding-span::before,
+.product10 .description .product-features .padding-span::before,
+.product11 .description .product-features .padding-span::before,
+.product12 .description .product-features .padding-span::before {
+  content: url("./images/G.svg");
+}
+.product {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+}
+.description {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.product img {
+  height: 143px;
+  width: 100%;
+  border-radius: 15px 15px 0 0;
+}
+.product-features {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+.product-features span::before {
+  content: url("./images/nuts-light.svg");
+}
+
+.taste {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.taste span::before {
+  content: url("./images/chilli.svg");
+}
+/* Footer */
+footer {
+  /* padding: 100px; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  border-top: 1px solid #eceded;
+  position: sticky;
+  bottom: 0;
+}
+.footer-wrapper {
+  width: 60%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  justify-items: center;
+  align-items: center;
+  grid-gap: 16px;
+  background-color: #eaf0f0;
+  padding: 22px 9px;
+}
+.griditm {
+  width: 100%;
+}
+.btn-main {
+  max-width: 158px;
+  width: 100%;
+  height: 58px;
+  /* padding: 10px; */
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.starter {
+  background-color: #4a5c2f;
+  color: white;
+}
+.maincourse,
+.drinks,
+.desserts {
+  background-color: #d9d9d9;
+  color: #a9a9a9;
+}
+/* Footer responsive */
+@media (max-width: 860px) {
+  footer .footer-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
