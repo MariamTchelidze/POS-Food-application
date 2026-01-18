@@ -457,4 +457,7 @@ footer {
     font-size: 12px;
     font-weight: bold;
   }
+  .grid-wrapper {
+    overflow-x: hidden;
+  }
 }
