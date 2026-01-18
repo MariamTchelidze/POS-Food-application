@@ -212,6 +212,7 @@ input[type="date"]::-webkit-datetime-edit-year-field {
   align-items: center;
   grid-gap: 16px;
   overflow-y: scroll;
+  overflow-x: hidden;
 }
 .grid-wrapper::-webkit-scrollbar {
   background: #d8e6e9;
@@ -456,8 +457,5 @@ footer {
   .copyright p {
     font-size: 12px;
     font-weight: bold;
-  }
-  .grid-wrapper {
-    overflow-x: hidden;
   }
 }
