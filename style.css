@@ -91,11 +91,11 @@ input::placeholder {
   align-items: center;
   gap: 8px;
 }
+.date-span {
+  white-space: nowrap;
+}
 .calendar img {
   cursor: pointer;
-}
-.calendar span {
-  white-space: nowrap;
 }
 label {
   cursor: pointer;
