@@ -447,6 +447,11 @@ footer {
     flex-direction: column-reverse;
   }
 }
+@media (max-width: 400px) {
+  body {
+    overflow-x: hidden;
+  }
+}
 @media (max-width: 360px) {
   .copyright p {
     font-size: 12px;
