@@ -286,7 +286,7 @@ section {
   align-items: center;
   grid-gap: 16px;
   background-color: #eaf0f0;
-  padding: 22px 9px;
+  padding: 22px 16px;
 }
 .griditm {
   width: 100%;
@@ -311,9 +311,8 @@ section {
   color: #a9a9a9;
 }
 /* Footer responsive */
-@media (max-width: 860px) {
-  footer .footer-wrapper {
-    width: 100%;
+@media (max-width: 880px) {
+  .footer .footer-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
