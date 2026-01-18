@@ -94,6 +94,9 @@ input::placeholder {
 .calendar img {
   cursor: pointer;
 }
+.calendar span {
+  white-space: nowrap;
+}
 label {
   cursor: pointer;
   position: relative;
