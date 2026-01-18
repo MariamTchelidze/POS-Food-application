@@ -133,7 +133,7 @@ input[type="date"]::-webkit-datetime-edit-year-field {
   outline: none;
   font-size: 16px;
 }
-button {
+.header-btn {
   height: 58px;
   display: flex;
   justify-content: center;
